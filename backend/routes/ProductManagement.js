@@ -94,13 +94,15 @@ router.post('/addproduct', upload.single('productImage'), async (req, res) => {
 
 router.get('/getproducts', async (_req, res) => {
     try {
-        // find all products, newest first
-        const products = await Product.find().sort({ createdAt: -1 });
-        return res.json(products);
+      const products = await Product.find().sort({ createdAt: -1 });
+      return res.json(products);
     } catch (err) {
-        console.error('GET /getproducts error:', err);
-        return res.status(500).json({ error: 'Server error while fetching products.' });
+      console.error('GET /getproducts error:', err);
+      // Return the real message so you can see it in Postman
+      return res
+        .status(500)
+        .json({ error: 'Server error while fetching products.', detail: err.message });
     }
-});
-
+  });
+  
 module.exports = router;

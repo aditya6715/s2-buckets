@@ -77,7 +77,7 @@ const faqItems = [
           <li><strong>Water Consumption (L) & Energy Use (kWh):</strong> Resources consumed per unit</li>
           <li><strong>Product Weight (kg) & Lifespan (yrs):</strong> Durability and material intensity</li>
         </ul>
-
+         
         <p>
           Each metric is normalized to a 0–100 scale, weighted by its environmental impact, and combined into a single composite score. That final score maps to:
         </p>

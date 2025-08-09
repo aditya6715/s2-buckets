@@ -2,6 +2,9 @@
 
 A full-stack **React** and **Node.js** application designed for efficient, eco-friendly group orders, developed as part of the Amazon Hackathon. This project—**s2-buckets**—lets users shop, create or join group orders, track environmental impact, and earn sustainability badges.
 
+Frontend:  https://amazon-hackon-s2-buckets-lgc4.vercel.app/
+---
+Backend:  https://amazon-hackon-s2-buckets.vercel.app
 ---
 
 ## 🚀 Table of Contents
@@ -313,6 +316,21 @@ This project is licensed under the MIT License
  Built with 💚 for sustainability!
 
 
+
+## deployment:
+        •	backend : https://amazon-hackon-s2-buckets.vercel.app/
+	•       frontend:   
+
+ 
  
 
+
+
+## Fast api commonds for easy setup
+• python -m venv myenv
+• myenv\Scripts\activate
+• pip install fastapi uvicorn pydantic
+• pip install pandas numpy
+• pip install scikit-learn==1.6.1
+• uvicorn main:app --reload
 

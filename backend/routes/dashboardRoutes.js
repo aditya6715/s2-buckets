@@ -142,7 +142,7 @@ router.get('/user-dashboard', async (req, res) => {
       badgeScore,
       totalGroups: groupCount,
     });
-  } catch (err) {
+  }catch (err) {
     console.error('Dashboard fetch error:', err);
     res.status(500).json({ error: 'Server error' });
   }
